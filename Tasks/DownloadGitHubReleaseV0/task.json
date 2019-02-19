@@ -10,7 +10,7 @@
   "demands": [],
   "version": {
     "Major": 0,
-    "Minor": 148,
+    "Minor": 149,
     "Patch": 0
   },
   "minimumAgentVersion": "1.99.0",
@@ -99,8 +99,7 @@
     {
       "target": "userRepositorySearch",
       "endpointId": "$(connection)",
-      "dataSourceName": "SearchRepositoriesByName",
-      "resultSelector": "jsonpath:$['items'][*]",
+      "dataSourceName": "SearchRepositoriesByNameForTasks",
       "resultTemplate": "{ \"Value\" : \"{{full_name}}\", \"DisplayValue\" : \"{{full_name}}\" }",
       "parameters": {
         "searchText": "$(searchText)",
